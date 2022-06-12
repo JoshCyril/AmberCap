@@ -1,0 +1,74 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 3rem ;
+    --hue-color: 200; 
+
+    --first-color: hsl(var(--hue-color), 69%, 61%) ;
+    --first-color-second: hsl(var(--hue-color), 80%, 61%) ;
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%) ;
+    --first-color-lighter: hsl(var(--hue-color), 40%, 85%) ;
+
+    --shadow-colorr: rgba(0, 0, 0, 0.102);
+    --text-color: hsl(var(--hue-color), 8%, 45%) ;
+
+    --container-color: hsl(var(--hue-color), 26%, 98%);
+    
+    --hoverBtn-color: hsl(var(--hue-color), 40%, 96%) ;
+
+    --thin-shadow: 2px 2px 4px 0 var(--shadow-colorr);
+}
+
+.disable-select {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+.blog-flt {
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
+    background-color: var(--container-color);
+    border-radius: .5rem;
+    padding: 8px 15px;
+  }
+
+ .blog-flt li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px;
+    /* font-size: 14px; */
+    font-weight: 600;
+    line-height: 1;
+    /* text-transform: uppercase; */
+    color: var(--text-color);
+    margin-bottom: 5px;
+    margin-right: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.blog-flt li:hover, .blog-flt li.filter-active {
+    color: var(--first-color);
+    background-color: var(--hoverBtn-color);
+    border-radius: .5rem;
+    box-shadow: var(--thin-shadow);
+    cursor: pointer;
+  }
+  
+ .blog-flt li:last-child {
+    margin-right: 0;
+  }
+
+  .badge-light{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(251, 195, 195);
+  }
