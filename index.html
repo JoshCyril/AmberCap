@@ -10,14 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap-reboot.min.css" integrity="sha512-wV3xzHEw4kJUF4G0fyXSefKmUVhwwbOdZinJvOxmysxAXSZBl17porgPOcQBDBQTEwgGevxXGWAAQ/UPaSd0nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- ~~~ Animate on scroll 2.3.4 ~~~ -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- ~~~ Tooltip popper ~~~ -->
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
-
     <!-- ~~~ Stylesheet ~~~ -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- ~~~ Title ~~~ -->
     <title>Amber Cap 🔸</title>
@@ -26,7 +20,288 @@
 </head>
     <body>
         <!-- ~~~ Main Body ~~~ -->
-
+        <header class="mainHeader disable-select sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#"><span class="iconify-inline" data-icon="fxemoji:fire"></span> Amber Cap</a>
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="navbar-collapse collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav mr-auto">
+  
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#tags">Tags</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/assets/pages/blog1.html">Read a blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Post a blog</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+  
+          <section class="landingSection container disable-select" id="tags">
+            <div class="d-flex justify-content-center align-items-center flex-column py-5">
+              <h1 class="text-uppercase"> <span class="iconify-inline" data-icon="fxemoji:fire"></span> Amber Cap</h1>
+              <p>Read the blog <span class="text-capitalize badge badge-success">as quickly as possible.</span> </p>
+            </div>
+          </section>
+  
+          <main class="mainSection disable-select container">
+  
+            <section class="row" >
+                <div class="col-lg-12 d-flex justify-content-center">Select a tag to filter.</div>
+                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="50">
+                  <ul class="blog-flt">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-trend"><span class="iconify-inline mr-1" data-icon="icon-park-twotone:fire"style="color: red;"></span>Trending</span></li>
+                    <li data-filter=".filter-tech"><span class="iconify-inline mr-1" data-icon="icon-park-twotone:new-computer"></span>Tech</span></li>
+                    <li data-filter=".filter-car"><span class="iconify-inline mr-1" data-icon="ant-design:car-twotone"></span>Cars</span></li>
+                    <li data-filter=".filter-science"><span class="iconify-inline mr-1" data-icon="ic:twotone-science"></span>Science</span></li>
+                    <li data-filter=".filter-wellness"><span class="iconify-inline mr-1" data-icon="ant-design:heart-twotone"></span>Wellness</span></li>
+                  </ul>
+                </div>
+            </section>
+  
+            <section class=" blogs blog-container"> 
+              
+              <div class="row row-cols-1 row-cols-md-2 ">
+  
+                <div class="col mb-4 blog-item filter-trend filter-tech">
+                  <!-- Card -->
+                  <div class="card">
+                    <!--Card content-->
+                    <div class="card-body">
+              
+                      <!--Title-->
+                      <h4 class="card-title">
+                        <span class="badge badge-light"><span class="iconify-inline" data-icon="icon-park-twotone:fire"style="color: red;"></span></span>
+                        iOS 16: The Best New Features Coming to Your iPhone
+                      </h4>
+                      <!--Text-->
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis.
+                      </p>
+                      <span class="mr-1">3 mins |</span> <a href="/assets/pages/blog1.html" class="">Read More ...</a>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="card-footer text-muted ">
+                      <span class="mr-2">10 June, 2022</span>
+                      <span class="badge badge-pill badge-info pt-1 pb-1">Tech</span>
+                    </div>
+              
+                  </div>
+                  <!-- Card -->
+                </div>
+  
+                <div class="col mb-4 blog-item filter-car">
+                  <!-- Card -->
+                  <div class="card">
+                    <!--Card content-->
+                    <div class="card-body">
+              
+                      <!--Title-->
+                      <h4 class="card-title">
+                        Still Don't Have a Dash Cam? Here's the Best Way to Fix That
+                      </h4>
+                      <!--Text-->
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis.
+                      </p>
+                      <span class="mr-1">2 mins |</span> <a href="/assets/pages/blog2.html" class="">Read More ...</a>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="card-footer text-muted ">
+                      <span class="mr-2">04 May, 2022</span>
+                      <span class="badge badge-pill badge-danger pt-1 pb-1">Cars</span>
+                    </div>
+              
+                  </div>
+                  <!-- Card -->
+                </div>
+  
+                <div class="col mb-4 blog-item filter-tech">
+                  <!-- Card -->
+                  <div class="card">
+                    <!--Card content-->
+                    <div class="card-body">
+              
+                      <!--Title-->
+                      <h4 class="card-title">
+                        Best Bluetooth Wireless Speakers for 2022: Our 23 Top Picks for Every Budget
+                      </h4>
+                      <!--Text-->
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis.
+                      </p>
+                      <span class="mr-1">8 mins |</span> <a href="/assets/pages/blog3.html" class="">Read More ...</a>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="card-footer text-muted ">
+                      <span class="mr-2">12 June, 2022</span>
+                      <span class="badge badge-pill badge-info pt-1 pb-1">Tech</span>
+                    </div>
+              
+                  </div>
+                  <!-- Card -->
+                </div>     
+  
+                <div class="col mb-4 blog-item filter-car">
+                  <!-- Card -->
+                  <div class="card">
+                    <!--Card content-->
+                    <div class="card-body">
+              
+                      <!--Title-->
+                      <h4 class="card-title">
+                        Best Electric Cars and EVs for 2022
+                      </h4>
+                      <!--Text-->
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis.
+                      </p>
+                      <span class="mr-1">4 mins |</span> <a href="/assets/pages/blog4.html" class="">Read More ...</a>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="card-footer text-muted ">
+                      <span class="mr-2">04 May, 2022</span>
+                      <span class="badge badge-pill badge-danger pt-1 pb-1">Cars</span>
+                    </div>
+              
+                  </div>
+                  <!-- Card -->
+                </div>
+  
+                <div class="col mb-4 blog-item filter-trend filter-science">
+                  <!-- Card -->
+                  <div class="card">
+                    <!--Card content-->
+                    <div class="card-body">
+              
+                      <!--Title-->
+                      <h4 class="card-title">
+                        <span class="badge badge-light"><span class="iconify-inline" data-icon="icon-park-twotone:fire"style="color: red;"></span></span>
+                        Huge Croc-Faced Dinosaur Discovered: 'Europe's Largest Land Predator'
+                      </h4>
+                      <!--Text-->
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis.
+                      </p>
+                      <span class="mr-1">2 mins |</span> <a href="/assets/pages/blog5.html" class="">Read More ...</a>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="card-footer text-muted ">
+                      <span class="mr-2">24 Feb, 2022</span>
+                      <span class="badge badge-pill badge-warning pt-1 pb-1">Science</span>
+                    </div>
+              
+                  </div>
+                  <!-- Card -->
+                </div>
+  
+                <div class="col mb-4 blog-item filter-wellness">
+                  <!-- Card -->
+                  <div class="card">
+                    <!--Card content-->
+                    <div class="card-body">
+              
+                      <!--Title-->
+                      <h4 class="card-title">
+                        Is Anxiety Ruining Your Sleep? 5 Tips to Relieve Anxiety Before Bed
+                      </h4>
+                      <!--Text-->
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis.
+                      </p>
+                      <span class="mr-1">5 mins |</span> <a href="/assets/pages/blog6.html" class="">Read More ...</a>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="card-footer text-muted ">
+                      <span class="mr-2">12 June, 2022</span>
+                      <span class="badge badge-pill badge-success pt-1 pb-1">Wellness</span>
+                    </div>
+              
+                  </div>
+                  <!-- Card -->
+                </div>
+  
+                <div class="col mb-4 blog-item filter-science">
+                  <!-- Card -->
+                  <div class="card">
+                    <!--Card content-->
+                    <div class="card-body">
+              
+                      <!--Title-->
+                      <h4 class="card-title">
+                        Astronomers May Have Discovered the First Wandering Black Hole
+                      </h4>
+                      <!--Text-->
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis.
+                      </p>
+                      <span class="mr-1">4 mins |</span> <a href="/assets/pages/blog7.html" class="">Read More ...</a>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="card-footer text-muted ">
+                      <span class="mr-2">02 Jan, 2022</span>
+                      <span class="badge badge-pill badge-warning pt-1 pb-1">Science</span>
+                    </div>
+              
+                  </div>
+                  <!-- Card -->
+                </div>
+  
+                <div class="col mb-4 blog-item filter-trend filter-wellness">
+                  <!-- Card -->
+                  <div class="card">
+                    <!--Card content-->
+                    <div class="card-body">
+              
+                      <!--Title-->
+                      <h4 class="card-title">
+                        <span class="badge badge-light"><span class="iconify-inline" data-icon="icon-park-twotone:fire"style="color: red;"></span></span>
+                        How to Make Your Daily Walk More of a Workout
+                      </h4>
+                      <!--Text-->
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis.
+                      </p>
+                      <span class="mr-1">7 mins |</span> <a href="/assets/pages/blog8.html" class="">Read More ...</a>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="card-footer text-muted ">
+                      <span class="mr-2">16 May, 2022</span>
+                      <span class="badge badge-pill badge-success pt-1 pb-1">Wellness</span>
+                    </div>
+              
+                  </div>
+                  <!-- Card -->
+                </div>
+  
+              </div>
+  
+            </section>
+  
+            <section class="socials">
+            </section>
+  
+          </main>
+  
+          <footer class="mainFooter">
+  
+          </footer>
         
         <!-- ~~~ jquery 3.6.0 ~~~ -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -41,19 +316,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
-        <!-- ~~~ Tooltip popper ~~~ -->
-            <!-- Development -->
-        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-            <!-- Production -->
-        <!-- <script src="https://unpkg.com/@popperjs/core@2"></script>
-        <script src="https://unpkg.com/tippy.js@6"></script> -->
-        
-        <!-- ~~~ Animate on scroll 2.3.4 ~~~ -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
         <!-- ~~~ Scripts ~~~ -->
-        <script src="assets/js/tooltip.js" async defer></script> 
-        <script src="assets/js/script.js" async defer></script>
+        <script src="/assets/js/script.js" async defer></script>
     </body>
 </html>
